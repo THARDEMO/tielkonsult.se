@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'ActionSans-Bold';
+    src: url('../fonts/ActionSans-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ActionSans-Light';
+    src: url('../fonts/ActionSans-Light.otf') format('opentype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ActionSans-Medium';
+    src: url('../fonts/ActionSans-Medium.otf') format('opentype');
+    font-weight: 550;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ActionSans-Regular';
+    src: url('../fonts/ActionSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
