@@ -1,21 +1,21 @@
 import "./globals.css";
-import TransitionLink from "./components/TransitionLink";
+import { Nav } from "./components/Nav";
 
 export const metadata = {
-  title: 'TiElkonsult AB'
+  title: 'Ti Elkonsult AB',
+  description: 'Elkonsult i Skåne, Svedala. RISE certifierad konsult.'
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="sv">
       <body>
-        <nav>
-          <TransitionLink href='/' label='Home'/>
-          <TransitionLink href='/projekt' label='Projekt'/>
 
-        </nav>
+        <Nav />
 
-        {children}
+        <div id="root" >
+          {children}
+        </div>
       </body>
     </html>
   );

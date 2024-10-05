@@ -1,0 +1,37 @@
+.heading-01 {
+    font-family: 'ClashDisplay-Medium', var( --FontFallback);;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    margin: 1rem 0 0 0;
+
+    text-transform: capitalize;
+
+}
+
+.heading-02 {
+    font-family: 'ClashDisplay-Medium', var( --FontFallback);;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -.5px;
+
+    margin: .75rem 0 0 0;   
+}
+
+.text-01 {
+    font-family: 'Actionsans-regular', var( --FontFallback);
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -.3px;
+
+    max-width: 750px;
+    margin: .5rem 0 0 0;
+}
+
+.text-utility {
+    font-family: 'Actionsans-Medium', var( --FontFallback);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
