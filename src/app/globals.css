@@ -5,14 +5,6 @@
   --foreground: #171717;
 }
 
-/* font-family: ClashDisplay-Extralight;
-font-family: ClashDisplay-Light;
-font-family: ClashDisplay-Regular;
-font-family: ClashDisplay-Medium;
-font-family: ClashDisplay-Semibold;
-font-family: ClashDisplay-Bold;
-font-family: ClashDisplay-Variable; */
-
 p {
   font-family: ClashDisplay-Variable;
   font-weight: 650;
