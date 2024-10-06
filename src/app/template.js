@@ -1,5 +1,4 @@
 'use client'
-import '@/app/css/drape.css';
 
 import { useEffect } from 'react';
 import { animatePageIn } from './utils/animation';

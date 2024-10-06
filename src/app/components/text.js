@@ -1,13 +1,20 @@
 export const Text = ({content, type}) => {
+    let element;
 
+    switch ( type ) {
+        case 'utility': 
+            element = <span className={`text-${type}`}>{content}</span>
+            break;
+        default: 
+            element = <p className={`text-${type}`} >{content}</p>
+    }
 
-    return <p className={`text-${type}`} >{content}</p>
+    return element;
 }
 
 export const Heading = ({content, type}) => {
 
     let element;
-
     switch( type) {
         case '01': 
             element = <h1 className='heading-01'>{content}</h1>
@@ -16,8 +23,7 @@ export const Heading = ({content, type}) => {
             element = <h2 className='heading-02'>{content}</h2>
             break;
         default:
-            element = <Text_01 content={`Type Error::${type}`}/>
+            element = <Text content={`Type Error::${type}`}/>
     }
- 
     return element;
 }

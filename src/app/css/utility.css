@@ -41,3 +41,15 @@
 .pd-32 {padding: 0 32px}
 
 .pd-72 {padding: 0 72px}
+
+
+/* LINKS || HYPERTAGS */
+.internal-link, 
+.internal-link:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+.active-link {
+    color: var(--blue) !important;
+}

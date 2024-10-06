@@ -28,6 +28,13 @@
     margin: .5rem 0 0 0;
 }
 
+.text-02 {
+    font-family: 'Actionsans-semiBold', var( --FontFallback);
+    font-size: 18px;
+    line-height: 24px;
+    margin: .5rem 0 0 0;
+}
+
 .text-utility {
     font-family: 'Actionsans-Medium', var( --FontFallback);
     font-size: 16px;
@@ -35,3 +42,4 @@
     text-align: center;
     text-transform: uppercase;
 }
+
