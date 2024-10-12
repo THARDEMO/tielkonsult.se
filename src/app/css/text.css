@@ -36,10 +36,20 @@
 }
 
 .text-utility {
-    font-family: 'Actionsans-Medium', var( --FontFallback);
+    font-family: 'Actionsans-regular', var( --FontFallback);
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: .5px;
     text-align: center;
     text-transform: uppercase;
+}
+.text-utility-small {
+    font-family: 'Actionsans-regular', var( --FontFallback);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+
+    color: #0000009f;
 }
 

@@ -3,8 +3,8 @@
 import { useFormState } from 'react-dom'
 import { useRouter } from "next/navigation"
 
-import { handleLogin } from "../logic/state"
-import { animatePageOut } from "../utils/animation"
+import { handleLogin } from "../../logic/state"
+import { animatePageOut } from "../../utils/animation"
 
 
 

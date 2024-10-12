@@ -18,7 +18,7 @@ const TransitionLink = ({href, label}) => {
     }
 
     return( 
-        <Link onClick={handleClick} href={href} className={`internal-link ${active}`}>
+        <Link role='link' onClick={handleClick} href={href} className={`internal-link ${active}`}>
             <Text content={label} type='utility'/>
         </Link>
     );

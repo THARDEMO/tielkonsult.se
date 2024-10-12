@@ -1,12 +1,16 @@
+
 import "./globals.css";
 import { Nav } from "./components/Nav";
+import { CookieBanner } from "./components/cookieBanner";
 
 export const metadata = {
   title: 'Ti Elkonsult AB',
   description: 'Elkonsult i Skåne, Svedala. RISE certifierad konsult.'
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+
+
   return (
     <html lang="sv">
       <body>
@@ -17,7 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
 
-        
+        <CookieBanner />
       </body>
     </html>
   );

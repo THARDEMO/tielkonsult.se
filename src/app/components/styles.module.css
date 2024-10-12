@@ -1,0 +1,43 @@
+#cookieBanner {
+    background: var( --white);
+
+    position: fixed;
+    bottom: 0;
+
+    & div {
+        max-width: calc( var(--rootWidth) + 144px);
+    }
+}
+
+
+#primary-button {
+    background: var(--offwhite);
+    max-width: 250px;
+    border: unset;
+    border-radius: 25px;
+    border: 1px solid var(--black);
+
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+#primary-button:hover {
+    background: var(--black);
+    color: var(--offwhite);
+}
+
+#submit-button {
+    border: none;
+    max-width: fit-content;
+    /* background-color: #ffffff00; */
+
+    transition: opacity  .3s ease-in-out;
+
+
+    & span{
+        color: var(--white);
+    }
+}
+
+#submit-button:hover {
+    opacity: .7;
+}

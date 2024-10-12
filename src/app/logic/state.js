@@ -18,6 +18,10 @@ export async function Get( context, refresh = false ) {
     return _state[context];
 }
 
+export async function Post( state, formdata) {
+
+}
+
 export async function handleLogin( state, formdata ) {
 
     const password = formdata.get( 'password')
@@ -38,7 +42,19 @@ export async function handleLogin( state, formdata ) {
 }
 
 // COOKIES 
-async function getCookie(name) {return cookies().get(name)}
-async function setCookie(name, value) {cookies().set(name, value, {sameSite:'lax'})}
-export async function checkCookie(name) {return cookies().has(name)}
+async function getCookie(name) {
+    const cookieStore = cookies();
+    const cookie = cookieStore.get(`${name}`);
+    return cookie;
+}
+async function setCookie(name, value) {cookies().set(name, value, {expires: Date.now() + 604800})}
 export async function deleteCookie_dev(name) {cookies().delete('token')}
+export async function acceptCookie() {
+    setCookie('accepted-functional-cookies', Date.now());
+}
+export async function checkCookie(name) {
+    return await getCookie(name);
+    
+    if( !getCookie(name)) return false;
+    return true;
+}

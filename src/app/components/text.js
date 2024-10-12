@@ -2,7 +2,8 @@ export const Text = ({content, type}) => {
     let element;
 
     switch ( type ) {
-        case 'utility': 
+        case 'utility':
+        case 'utility-small': 
             element = <span className={`text-${type}`}>{content}</span>
             break;
         default: 

@@ -21,3 +21,12 @@ export const animatePageOut = ( href, router ) => {
             .to(drape, {opacity:1, zIndex:10, onComplete: () => router.push(href) });
     
 }
+
+export const removeCookieBanner = () => {
+    const banner = document.querySelector('.CookieBanner');
+
+    const timeline = gsap.timeline();
+    timeline.set(banner, {yPercent:0})
+            .to(banner, {yPercent:100,onComplete:()=>banner.remove()})
+
+}
